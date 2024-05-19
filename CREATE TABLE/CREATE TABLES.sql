@@ -138,3 +138,5 @@ CREATE TABLE IF NOT EXISTS `veterinaria`.`Cliente_Servico` (
   `Servico_id` INT NULL,
     FOREIGN KEY (`Cliente_cpf`) REFERENCES `veterinaria`.`Cliente` (`cpf`),
     FOREIGN KEY (`Servico_id`) REFERENCES `veterinaria`.`Servico` (`id`));
+    
+    
