@@ -1,10 +1,15 @@
--- populando tabela pagamento
-
+-- Populando tabela pagamento
 INSERT INTO veterinaria.pagamento (id, forma_pagamento) VALUES
 (1, 'Cartão de Crédito'),
 (2, 'Cartão de Débito'),
 (3, 'Dinheiro'),
-(4, 'Pix');
+(4, 'Pix'),
+(5, 'Transferência Bancária'),
+(6, 'Cheque'),
+(7, 'Vale Alimentação'),
+(8, 'Crédito Loja');
+
+
 
 -- populando tabela venda
 
@@ -14,10 +19,13 @@ INSERT INTO veterinaria.Venda (id, Funcionario_cpf, Cliente_cpf, pagamento_id, D
 (3, 456789123, '14719263038', 3, '2023-05-19 11:30:00'),
 (4, 789123456, '18315064088', 4, '2023-05-19 12:00:00');
 
--- populando tabela itens_vendas
+-- Populando tabela itens_venda
 
 INSERT INTO veterinaria.itens_venda (Venda_idVenda, `servico-produto_codigo`, Produto_id) VALUES
 (1, NULL, 1),
 (2, 1, NULL),
 (3, NULL, 2),
 (4, 2, NULL);
+
+
+
